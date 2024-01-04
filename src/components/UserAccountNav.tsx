@@ -1,6 +1,5 @@
 "use client";
 
-import { User } from "@/payload-types";
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -11,6 +10,7 @@ import {
 } from "./ui/dropdown-menu";
 import Link from "next/link";
 import { useAuth } from "@/hooks/use-auth";
+import { User } from "../../payload-types";
 
 const UserAccountNav = ({ user }: { user: User }) => {
   const { signOut } = useAuth();
