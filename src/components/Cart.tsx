@@ -15,9 +15,9 @@ import { buttonVariants } from "./ui/button";
 import Image from "next/image";
 import { useCart } from "@/hooks/use-cart";
 import { ScrollArea } from "./ui/scroll-area";
-import CartItem from "./CartItem";
 import { useEffect, useState } from "react";
 import { formatPrice } from "@/lib/utils";
+import CartItem from "./CartItem";
 
 const Cart = () => {
   const { items } = useCart();
@@ -95,7 +95,7 @@ const Cart = () => {
           <div className="flex h-full flex-col items-center justify-center space-y-1">
             <div
               aria-hidden="true"
-              className="relative mb-4 h-60 w-60 text-muted-foreground"
+              className="relative mb-4 size-60 text-muted-foreground"
             >
               <Image
                 src="/hippo-empty-cart.png"
